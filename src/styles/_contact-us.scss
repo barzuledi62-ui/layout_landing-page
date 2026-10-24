@@ -11,7 +11,7 @@
     @include mixins.on-desktop {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      column-gap: 111px;
+      column-gap: 111px;  
     }
   }
 
