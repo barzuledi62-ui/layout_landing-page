@@ -1,3 +1,31 @@
-body {
+@use 'variables' as *;
+@use 'mixins';
+@use 'header';
+@use 'recommended';
+@use 'categories';
+@use 'about-us';
+@use 'contact-us';
+@use 'icons';
+@use 'burger-menu';
+
+.page {
+  font-family: $font-family;
+  scroll-behavior: smooth;
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.page__body {
   margin: 0;
 }
