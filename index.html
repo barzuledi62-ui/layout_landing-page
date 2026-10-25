@@ -1,0 +1,550 @@
+<!-- #region head -->
+<!doctype html>
+<html
+  class="page"
+  lang="en"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/layout_landing-page/assets/favicon-6IgnMVcr.png"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Bang & Olufsen</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="/layout_landing-page/assets/favicon-6IgnMVcr.png"
+    />
+
+
+    <script
+      src="src/scripts/main.js"
+      defer
+    ></script>
+    <link rel="stylesheet" crossorigin href="/layout_landing-page/assets/index-lOubaI3Z.css">
+  </head>
+  <!-- #endregion -->
+
+  <body class="page__body">
+    <header class="header">
+      <div class="header__top">
+        <a href="#">
+          <img
+            class="header__logo"
+            src="data:image/png;base64,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"
+            alt="Bang & Olufsen"
+          />
+        </a>
+
+        <div class="header__icons">
+          <div class="header__phone">
+            <a
+              href="tel:+123455555555"
+              class="icon icon-phone"
+              aria-label="Call us"
+            ></a>
+
+            <a
+              href="tel:+123455555555"
+              class="header__phone-number"
+            >
+              +1 234 5555-55-55
+            </a>
+          </div>
+
+          <a
+            href="#menu"
+            class="icon icon-burger"
+            aria-label="Open menu"
+          ></a>
+        </div>
+      </div>
+
+      <div class="header__bottom">
+        <h1 class="header__title">
+          Your senses.
+          <br />
+          Set free.
+        </h1>
+      </div>
+    </header>
+
+    <!-- #region-aside -->
+    <aside
+      class="menu page__menu"
+      id="menu"
+    >
+      <div class="menu__top">
+        <a href="#">
+          <img
+            class="header__logo"
+            src="data:image/png;base64,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"
+            alt="Bang & Olufsen"
+          />
+        </a>
+
+        <a
+          href="#"
+          class="icon icon-close"
+          aria-label="Close menu"
+        ></a>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="#"
+            >
+              Home
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="#recommended"
+            >
+              Recommended
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="#categories"
+            >
+              Categories
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="#about-us"
+            >
+              About us
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a
+              class="nav__link"
+              href="#contact-us"
+            >
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="menu__phones__calls">
+        <a
+          href="tel:+123455555555"
+          class="menu-phone-number"
+        >
+          +1 234 5555-55-55
+        </a>
+
+        <a
+          href="tel:+123455555555"
+          class="menu-call-order"
+        >
+          call to order
+        </a>
+      </div>
+    </aside>
+    <!-- #endregion -->
+
+    <main class="main">
+      <!-- #region-recommended -->
+
+      <section
+        class="recommended"
+        id="recommended"
+      >
+        <h3 class="recommended__title">Recommended</h3>
+
+        <div class="recommended__list">
+          <div class="recommended__card">
+            <a
+              href="#"
+              class="recommended__link"
+            >
+              <img
+                class="recommended__image"
+                src="/layout_landing-page/assets/recommended-img1-C09QNvWR.png"
+                alt="Beosound A5 speaker"
+              />
+            </a>
+
+            <div class="recommended__content">
+              <h3 class="recommended__product-title">BEOSOUND A5</h3>
+
+              <p class="recommended__product-text">
+                Huge sound anywhere – in the home or outdoors. Beosound A5 is a
+                Wi-Fi and Bluetooth speaker with long-lasting battery and
+                wireless charging built in.
+              </p>
+            </div>
+
+            <span class="recommended__price">$ 1299.00</span>
+          </div>
+
+          <div class="recommended__card">
+            <a
+              href="#"
+              class="recommended__link"
+            >
+              <img
+                class="recommended__image"
+                src="/layout_landing-page/assets/recommended-img2-rU1gHCgG.png"
+                alt="Beoplay HX headphones"
+              />
+            </a>
+
+            <div class="recommended__content">
+              <h3 class="recommended__product-title">BEOPLAY HX</h3>
+
+              <p class="recommended__product-text">
+                Wireless noise-cancelling headphones. Listen in comfort whether
+                you're on a call, working from home or taking a moment for
+                yourself.
+              </p>
+            </div>
+
+            <span class="recommended__price">$ 499.00</span>
+          </div>
+
+          <div class="recommended__card">
+            <a
+              href="#"
+              class="recommended__link"
+            >
+              <img
+                class="recommended__image"
+                src="/layout_landing-page/assets/recommended-img3-BPmNLaOC.png"
+                alt="Beosound Theatre soundbar"
+              />
+            </a>
+
+            <div class="recommended__content">
+              <h3 class="recommended__product-title">BEOSOUND THEATRE</h3>
+
+              <p class="recommended__product-text">
+                Four patent-pending acoustic innovations in one sleek soundbar
+                envelop you in sound from every angle. Made to fit any TV, and
+                last for generations.
+              </p>
+            </div>
+
+            <span class="recommended__price">$ 3199.00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- #endregion -->
+
+      <!-- #region-categories -->
+
+      <section
+        class="categories"
+        id="categories"
+      >
+        <h3 class="categories__title">
+          Sound. Vision.
+          <br />
+          It’s your pick.
+        </h3>
+
+        <div class="categories__list">
+          <div class="categories__block">
+            <div class="categories__card">
+              <div class="categories__images">
+                <a
+                  href="#"
+                  class="categories__img-link"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="/layout_landing-page/assets/categories-speakers1-desktop-SLpA5kpT.png"
+                    />
+
+                    <img
+                      src="/layout_landing-page/assets/categories-img-speakers1-CBrC5DmG.png"
+                      alt="Portable speaker"
+                    />
+                  </picture>
+                </a>
+
+                <a
+                  href="#"
+                  class="categories__img-link"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="/layout_landing-page/assets/categories-speakers2-desktop-CtwiF2Tj.png"
+                    />
+
+                    <img
+                      src="/layout_landing-page/assets/categories-img-speakers2-CRquXfUD.png"
+                      alt="Portable speaker"
+                    />
+                  </picture>
+                </a>
+              </div>
+
+              <h3 class="categories__description">Portable speakers</h3>
+            </div>
+
+            <div class="categories__card">
+              <div class="categories__images">
+                <a
+                  href="#"
+                  class="categories__img-link"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="/layout_landing-page/assets/categories-earphones1-desktop-C_mCrAqc.png"
+                    />
+
+                    <img
+                      src="/layout_landing-page/assets/categories-earphones1-BtvTt2cG.png"
+                      alt="Earphones"
+                    />
+                  </picture>
+                </a>
+
+                <a
+                  href="#"
+                  class="categories__img-link"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="/layout_landing-page/assets/categories-earphones2-desktop-CH5N6u6-.png"
+                    />
+
+                    <img
+                      src="/layout_landing-page/assets/categories-aerphones2-BGWfnDLI.png"
+                      alt="Earphones"
+                    />
+                  </picture>
+                </a>
+              </div>
+
+              <h3 class="categories__description">Earphones</h3>
+            </div>
+
+            <div class="categories__card">
+              <div class="categories__images">
+                <a
+                  href="#"
+                  class="categories__img-link"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="/layout_landing-page/assets/categories-smart-home1-desktop-Dxpipeiu.png"
+                    />
+
+                    <img
+                      src="/layout_landing-page/assets/categories-smarthome1-DDhg2dwO.png"
+                      alt="Smart home products"
+                    />
+                  </picture>
+                </a>
+
+                <a
+                  href="#"
+                  class="categories__img-link"
+                >
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="/layout_landing-page/assets/categories-smart-home2-desktop-C_SeFSjS.png"
+                    />
+
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="Smart home products"
+                    />
+                  </picture>
+                </a>
+              </div>
+
+              <h3 class="categories__description">Smart Home</h3>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="categories__button"
+          >
+            View all
+          </button>
+        </div>
+      </section>
+
+      <!-- #endregion -->
+
+      <!-- #region-about-us -->
+
+      <section
+        class="about-us"
+        id="about-us"
+      >
+        <div class="about-us__container">
+          <div class="about-us__image-container">
+            <picture class="about-us__picture">
+              <source
+                media="(min-width: 1260px)"
+                srcset="/layout_landing-page/assets/about-us-bg-for-desktop-CidUYLlB.png"
+              />
+
+              <img
+                src="/layout_landing-page/assets/about-us-bg-XBIS0Ue8.png"
+                alt="Bang & Olufsen music system"
+                class="about-us__image"
+              />
+            </picture>
+          </div>
+
+          <div class="about-us__bottom">
+            <h3 class="about-us__title">
+              Timeless, for 50
+              <br />
+              years and
+              <br class="about-us__br">
+              counting
+            </h3>
+
+            <p class="about-us__description">
+              Bang & Olufsen is expanding its Recreated Classics Program with
+              the launch of Beosystems – a limited edition music system that
+              transcends time by bridging the gap between one of our iconic
+              designs from 1972 and today’s cutting-edge digital technology.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- #endregion -->
+
+      <!-- #region-contact-us -->
+
+      <section
+        class="contact-us"
+        id="contact-us"
+      >
+        <div class="contact-us__container">
+          <h3 class="contact-us__title">Contact us</h3>
+
+          <form class="contact-us__form">
+            <div class="contact-us__top">
+              <input
+                type="text"
+                name="name"
+                class="contact-us__input"
+                placeholder="Name"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                class="contact-us__input-2"
+                placeholder="Email"
+                required
+              />
+
+              <textarea
+                name="message"
+                class="contact-us__textarea"
+                placeholder="Message"
+                rows="4"
+              ></textarea>
+
+              <button
+                type="reset"
+                class="contact-us__button"
+              >
+                Send
+              </button>
+            </div>
+          </form>
+
+          <div class="contact-us__info">
+            <div class="contact-us__info-item">
+              <span class="contact-us__label">Phone</span>
+
+              <a
+                href="tel:+123455555555"
+                class="contact-us__value"
+              >
+                +1 234 5555-55-55
+              </a>
+            </div>
+
+            <div class="contact-us__info-item">
+              <span class="contact-us__label">Email</span>
+
+              <a
+                href="mailto:hello@bang-olufsen.com"
+                class="contact-us__value"
+              >
+                hello@bang-olufsen.com
+              </a>
+            </div>
+
+            <div class="contact-us__info-item">
+              <span class="contact-us__label">Address</span>
+
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=400+First+Ave%2C+Suite+700%2C+Minneapolis%2C+MN+55401"
+                class="contact-us__value contact-us__value--address"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                400 first ave.
+                <br />
+                suite 700
+                <br />
+                Minneapolis, MN 55401
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- #endregion -->
+
+      <footer class="footer"></footer>
+    </main>
+  </body>
+</html>
