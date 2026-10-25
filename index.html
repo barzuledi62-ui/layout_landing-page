@@ -10,9 +10,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./src/images/favicon.png"
     />
     <link
       rel="preconnect"
@@ -22,11 +28,20 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <title>Landing Page</title>
+
+    <title>Bang & Olufsen</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./src/images/favicon.png"
+    />
+
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
+
     <script
       src="src/scripts/main.js"
       defer
@@ -41,18 +56,30 @@
           <img
             class="header__logo"
             src="./src/images/header-bang-logo.png"
-            alt="Bang logo"
+            alt="Bang & Olufsen"
           />
         </a>
 
         <div class="header__icons">
-          <a
-            href="#phone-number"
-            class="icon icon-phone"
-          ></a>
+          <div class="header__phone">
+            <a
+              href="tel:+123455555555"
+              class="icon icon-phone"
+              aria-label="Call us"
+            ></a>
+
+            <a
+              href="tel:+123455555555"
+              class="header__phone-number"
+            >
+              +1 234 5555-55-55
+            </a>
+          </div>
+
           <a
             href="#menu"
             class="icon icon-burger"
+            aria-label="Open menu"
           ></a>
         </div>
       </div>
@@ -65,6 +92,7 @@
         </h1>
       </div>
     </header>
+
     <!-- #region-aside -->
     <aside
       class="menu page__menu"
@@ -75,15 +103,17 @@
           <img
             class="header__logo"
             src="./src/images/header-bang-logo.png"
-            alt="Bang logo"
+            alt="Bang & Olufsen"
           />
         </a>
 
         <a
           href="#"
           class="icon icon-close"
+          aria-label="Close menu"
         ></a>
       </div>
+
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
@@ -94,6 +124,7 @@
               Home
             </a>
           </li>
+
           <li class="nav__item">
             <a
               class="nav__link"
@@ -102,6 +133,7 @@
               Recommended
             </a>
           </li>
+
           <li class="nav__item">
             <a
               class="nav__link"
@@ -110,6 +142,7 @@
               Categories
             </a>
           </li>
+
           <li class="nav__item">
             <a
               class="nav__link"
@@ -118,6 +151,7 @@
               About us
             </a>
           </li>
+
           <li class="nav__item">
             <a
               class="nav__link"
@@ -131,13 +165,14 @@
 
       <div class="menu__phones__calls">
         <a
-          href="tel:+1 234 5555-55-55"
+          href="tel:+123455555555"
           class="menu-phone-number"
         >
           +1 234 5555-55-55
         </a>
+
         <a
-          href="tel:+1 234 5555-55-55"
+          href="tel:+123455555555"
           class="menu-call-order"
         >
           call to order
@@ -145,6 +180,7 @@
       </div>
     </aside>
     <!-- #endregion -->
+
     <main class="main">
       <!-- #region-recommended -->
 
@@ -163,17 +199,20 @@
               <img
                 class="recommended__image"
                 src="./src/images/recommended-img1.png"
-                alt="beosoung a5"
+                alt="Beosound A5 speaker"
               />
             </a>
+
             <div class="recommended__content">
               <h3 class="recommended__product-title">BEOSOUND A5</h3>
+
               <p class="recommended__product-text">
                 Huge sound anywhere – in the home or outdoors. Beosound A5 is a
                 Wi-Fi and Bluetooth speaker with long-lasting battery and
                 wireless charging built in.
               </p>
             </div>
+
             <span class="recommended__price">$ 1299.00</span>
           </div>
 
@@ -185,17 +224,20 @@
               <img
                 class="recommended__image"
                 src="./src/images/recommended-img2.png"
-                alt="BEOPLAY HX"
+                alt="Beoplay HX headphones"
               />
             </a>
+
             <div class="recommended__content">
               <h3 class="recommended__product-title">BEOPLAY HX</h3>
+
               <p class="recommended__product-text">
                 Wireless noise-cancelling headphones. Listen in comfort whether
                 you're on a call, working from home or taking a moment for
                 yourself.
               </p>
             </div>
+
             <span class="recommended__price">$ 499.00</span>
           </div>
 
@@ -207,17 +249,20 @@
               <img
                 class="recommended__image"
                 src="./src/images/recommended-img3.png"
-                alt="BEOSOUND THEATRE"
+                alt="Beosound Theatre soundbar"
               />
             </a>
+
             <div class="recommended__content">
               <h3 class="recommended__product-title">BEOSOUND THEATRE</h3>
+
               <p class="recommended__product-text">
                 Four patent-pending acoustic innovations in one sleek soundbar
                 envelop you in sound from every angle. Made to fit any TV, and
                 last for generations.
               </p>
             </div>
+
             <span class="recommended__price">$ 3199.00</span>
           </div>
         </div>
@@ -226,6 +271,7 @@
       <!-- #endregion -->
 
       <!-- #region-categories -->
+
       <section
         class="categories"
         id="categories"
@@ -244,20 +290,34 @@
                   href="#"
                   class="categories__img-link"
                 >
-                  <img
-                    src="./src/images/categories-img-speakers1.png"
-                    alt="Portable speaker"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="./src/images/categories-speakers1-desktop.png"
+                    />
+
+                    <img
+                      src="./src/images/categories-img-speakers1.png"
+                      alt="Portable speaker"
+                    />
+                  </picture>
                 </a>
 
                 <a
                   href="#"
                   class="categories__img-link"
                 >
-                  <img
-                    src="./src/images/categories-img-speakers2.png"
-                    alt="Portable speaker"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="./src/images/categories-speakers2-desktop.png"
+                    />
+
+                    <img
+                      src="./src/images/categories-img-speakers2.png"
+                      alt="Portable speaker"
+                    />
+                  </picture>
                 </a>
               </div>
 
@@ -270,20 +330,34 @@
                   href="#"
                   class="categories__img-link"
                 >
-                  <img
-                    src="./src/images/categories-earphones1.png"
-                    alt="Portable speaker"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="./src/images/categories-earphones1-desktop.png"
+                    />
+
+                    <img
+                      src="./src/images/categories-earphones1.png"
+                      alt="Earphones"
+                    />
+                  </picture>
                 </a>
 
                 <a
                   href="#"
                   class="categories__img-link"
                 >
-                  <img
-                    src="./src/images/categories-aerphones2.png"
-                    alt="Portable speaker"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="./src/images/categories-earphones2-desktop.png"
+                    />
+
+                    <img
+                      src="./src/images/categories-aerphones2.png"
+                      alt="Earphones"
+                    />
+                  </picture>
                 </a>
               </div>
 
@@ -296,29 +370,50 @@
                   href="#"
                   class="categories__img-link"
                 >
-                  <img
-                    src="./src/images/categories-smarthome1.png"
-                    alt="Portable speaker"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="./src/images/categories-smart-home1-desktop.png"
+                    />
+
+                    <img
+                      src="./src/images/categories-smarthome1.png"
+                      alt="Smart home products"
+                    />
+                  </picture>
                 </a>
 
                 <a
                   href="#"
                   class="categories__img-link"
                 >
-                  <img
-                    src="./src/images/categories-smarthome2.png"
-                    alt="Portable speaker"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1260px)"
+                      srcset="./src/images/categories-smart-home2-desktop.png"
+                    />
+
+                    <img
+                      src="./src/images/categories-smarthome2.png"
+                      alt="Smart home products"
+                    />
+                  </picture>
                 </a>
               </div>
 
               <h3 class="categories__description">Smart Home</h3>
             </div>
           </div>
-          <button class="categories__button">View all</button>
+
+          <button
+            type="button"
+            class="categories__button"
+          >
+            View all
+          </button>
         </div>
       </section>
+
       <!-- #endregion -->
 
       <!-- #region-about-us -->
@@ -348,7 +443,7 @@
               Timeless, for 50
               <br />
               years and
-              <br />
+              <br class="about-us__br">
               counting
             </h3>
 
@@ -364,7 +459,8 @@
 
       <!-- #endregion -->
 
-      <!-- #region-contuct-us -->
+      <!-- #region-contact-us -->
+
       <section
         class="contact-us"
         id="contact-us"
@@ -372,11 +468,7 @@
         <div class="contact-us__container">
           <h3 class="contact-us__title">Contact us</h3>
 
-          <form
-            action="#"
-            class="contact-us__form"
-            method="POST"
-          >
+          <form class="contact-us__form">
             <div class="contact-us__top">
               <input
                 type="text"
@@ -402,7 +494,7 @@
               ></textarea>
 
               <button
-                type="submit"
+                type="reset"
                 class="contact-us__button"
               >
                 Send
@@ -436,13 +528,18 @@
             <div class="contact-us__info-item">
               <span class="contact-us__label">Address</span>
 
-              <address class="contact-us__value contact-us__value--address">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=400+First+Ave%2C+Suite+700%2C+Minneapolis%2C+MN+55401"
+                class="contact-us__value contact-us__value--address"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 400 first ave.
                 <br />
                 suite 700
                 <br />
                 Minneapolis, MN 55401
-              </address>
+              </a>
             </div>
           </div>
         </div>

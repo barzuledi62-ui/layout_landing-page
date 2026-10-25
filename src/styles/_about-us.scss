@@ -32,6 +32,17 @@
     font-size: 32px;
     font-weight: 700;
     margin: 0;
+
+    @include mixins.on-desktop {
+      max-width: 498px;
+      height: 96px;
+      line-height: 48px;
+
+      .about-us__br {
+        display: flex;
+        display: none;
+      }
+    }
   }
 
   &__description {
@@ -41,6 +52,11 @@
     line-height: $line-height;
     letter-spacing: 0.15px;
     margin: 0;
+
+    @include mixins.on-desktop {
+      max-width: 411px;
+      height: 110px;
+    }
   }
 
   @include mixins.on-tablet {

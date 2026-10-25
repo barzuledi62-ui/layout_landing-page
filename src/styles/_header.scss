@@ -44,11 +44,41 @@
 
   &__icons {
     display: flex;
+    align-items: center;
     gap: 24px;
 
     @include mixins.on-tablet {
-      display: flex;
       gap: 32px;
+    }
+  }
+
+  &__phone {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-number {
+    position: absolute;
+    right: calc(100% + 16px);
+
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+      opacity 300ms ease,
+      visibility 300ms ease;
+  }
+
+  // Показуємо номер лише при наведенні на іконку телефона
+  @include mixins.on-desktop {
+    &__phone:hover &__phone-number {
+      opacity: 1;
+      visibility: visible;
     }
   }
 
